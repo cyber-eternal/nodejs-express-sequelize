@@ -1,0 +1,9 @@
+version: '2.4'
+services:
+  node-api:
+    ports:
+      - 3332:3331
+    cpu_count: 2
+    cpus: '0.25'
+    mem_limit: 2048MB
+    container_name: 'node-api-prod'

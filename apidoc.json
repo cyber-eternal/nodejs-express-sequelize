@@ -1,0 +1,8 @@
+{
+  "name": "Node API",
+  "version": "1.0.0",
+  "description": "Node API documentation",
+  "template": {
+    "withCompare": false
+  }
+}
