@@ -3,4 +3,31 @@ services:
   node-api:
     build: .
     restart: 'always'
-    
+    ports:
+      - ${CONTAINER_PORT}:${PORT}
+    cpu_count: 2
+    cpus: '0.25'
+    mem_limit: 2048MB
+    env_file: .env
+    container_name: 'node-api-${NODE_ENV}'
+    # links:
+    #   - mysql
+  
+# uncomment for use mysql container
+  # mysql:
+  #   image: 'mysql:latest'
+  #   restart: 'always'
+  #   expose:
+  #     - ${DB_PORT}
+  #   ports:
+  #     - '${DB_PORT}:3306'
+  #   cpu_count: 2
+  #   cpus: '0.25'
+  #   mem_limit: 1024M
+  #   container_name: 'mysql-${NODE_ENV}'
+  #   env_file: .env
+  #   environment:
+  #       MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
+  #       MYSQL_DATABASE: ${DB_NAME}
+  #       MYSQL_USER: ${DB_USERNAME}
+  #       MYSQL_PASSWORD: ${MYSQL_PASSWORD}

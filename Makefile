@@ -6,10 +6,12 @@ endif
 COMPOSE_FILE_PATH := -f docker-compose.$(ENV).yml
 
 up:
-	@docker-compose -f docker-compose.yml $(COMPOSE_FILE_PATH) up -d --build
+	@docker-compose up -d --build
 down:
-	@docker-compose -f docker-compose.yml $(COMPOSE_FILE_PATH) down
+	@docker-compose down
 exec_api:
 	@docker exec -it node-api-$(ENV)  /bin/bash
+exec_db:
+	@docker exec -it mysql-$(ENV)  /bin/bash
 ps:
 	@docker-compose ps
