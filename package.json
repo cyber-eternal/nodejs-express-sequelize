@@ -35,7 +35,7 @@
     "dotenv": "^8.2.0",
     "express": "4.17.3",
     "mysql2": "^2.1.0",
-    "sequelize": "^6.28.2",
+    "sequelize": "^6.29.0",
     "sequelize-cli": "^5.5.1",
     "sequelize-paginate": "^1.1.6"
   },
