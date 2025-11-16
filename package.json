@@ -61,9 +61,9 @@
     "babel-preset-stage-0": "^6.24.1",
     "babel-register": "^6.26.0",
     "core-js": "^3.0.0-beta.11",
-    "eslint": "^5.1.0",
-    "eslint-config-airbnb-base": "12.1.0",
-    "eslint-plugin-import": "2.8.0",
+    "eslint": "^9.39.1",
+    "eslint-config-airbnb-base": "15.0.0",
+    "eslint-plugin-import": "2.32.0",
     "nodemon": "3.1.9"
   },
   "nodemonConfig": {
